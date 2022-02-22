@@ -1,0 +1,20 @@
+.title {
+  font-size: var(--title-sm-size);
+}
+
+.caption {
+  font-size: var(--captions-sm-size);
+  margin: 0 0 var(--space-base) 0;
+}
+
+.text {
+  font-size: var(--text-sm-size);
+}
+
+.card .card-name {
+  font-size: 3.5vw;
+}
+
+.card .card-label {
+  font-size: 3.5vw;
+}
