@@ -55,9 +55,9 @@
 
             <div class="upper-home">
                 <span class="shadow"></span>
-                <div class="chat hide">
+                <div class="chat show">
                     <div class="chat-list">
-                        <div class="button-cross">
+                        <div class="button-cross" onclick="openChat()">
                             <img
                                 class="icon"
                                 src="./assets/img/cross.svg"
@@ -82,21 +82,7 @@
                 </div>
             </div>
         </main>
-        <script>
-            function addComment(e) {
-                // e.preventDefault()
-                const chatList = document.querySelector('.chat-list')
-                const textArea = document.querySelector('.input-message')
-
-                const message = document.createElement('div')
-                message.className = 'message body-2'
-                message.textContent = textArea.value
-
-                console.log(message)
-
-                chatList.appendChild(message)
-            }
-        </script>
+        <script src="./assets/js/components/chat.js"></script>
         <script src="./assets/js/animations/index.js"></script>
     </body>
 </html>
