@@ -1,0 +1,46 @@
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: var(--space-base);
+  align-items: center;
+}
+
+.card-avatar {
+  width: calc(var(--space-base) * 4);
+  height: calc(var(--space-base) * 4);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-name {
+  font-family: var(--font-family-primary);
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+
+.card-label {
+  font-family: var(--font-family-primary);
+  font-size: 1vw;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .card-name {
+    font-size: 2vw;
+  }
+
+  .card-label {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-name {
+    font-size: 3.5vw;
+  }
+
+  .card-label {
+    font-size: 3.5vw;
+  }
+}

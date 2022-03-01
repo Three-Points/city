@@ -1,0 +1,13 @@
+.home-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .home-image {
+    order: 1;
+    height: 90%;
+    border-radius: 8px;
+  }
+}

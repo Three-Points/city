@@ -1,0 +1,30 @@
+.button-action {
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-base) calc(var(--space-base)*2);
+    border-radius: 100px;
+}
+
+.button-cross {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-cross:hover {
+    background-color: var(--gray-hover);
+    transition: background-color 0.3s;
+}
