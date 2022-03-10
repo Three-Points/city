@@ -1,6 +1,6 @@
-import H1 from './H1'
-import H3 from './H3'
-import P from './P'
+import Title from './Title'
+import Caption from './Caption'
+import Content from './Content'
 
 export default {
     title: 'Theme/Font',
@@ -20,6 +20,19 @@ export default {
                 },
             },
         },
+        color: {
+            name: 'Color',
+            description: 'Color text',
+            options: ['default', 'soft'],
+            control: {
+                type: 'select',
+            },
+            table: {
+                defaultValue: {
+                    summary: 'default',
+                },
+            },
+        },
         weight: {
             name: 'Weight',
             description: 'Weight text',
@@ -36,22 +49,14 @@ export default {
     },
 }
 
-export const Content = () => {
-    const div = document.createElement('div')
-    div.appendChild(H1({ text: 'Headline 1' }))
-    div.appendChild(H3({ text: 'Headline 3' }))
-    div.appendChild(P({ text: 'Content' }))
-    return div
-}
-
 export const Headline1 = ({ ...args }) => {
-    return H1({ ...args })
+    return Title({ ...args })
 }
 
 export const Headline3 = ({ ...args }) => {
-    return H3({ ...args })
+    return Caption({ ...args })
 }
 
 export const Paragraph = ({ ...args }) => {
-    return P({ ...args })
+    return Content({ ...args })
 }

@@ -1,7 +1,5 @@
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
-    content: ['./*.{html,js}', './stories/*.{js,mdx}'],
+    content: ['./*.{html,js}', './src/**/*.{js,mdx}'],
     theme: {
         fontFamily: {
             'noto-sans': ['Noto Sans Display'],
@@ -26,42 +24,10 @@ module.exports = {
                 DEFAULT: '#F8F9FB',
                 hover: '#DBE4F3',
             },
+            white: '#FFFFFF',
         },
     },
     boxShadow: {
         DEFAULT: '#3B4252 0px 2px 8px',
     },
-    plugins: [
-        plugin(function ({ addBase, theme }) {
-            addBase({
-                h1: {
-                    color: theme('colors.primary.DEFAULT'),
-                    fontFamily: theme('fontFamily.noto-serif'),
-                    fontSize: theme('fontSize.display-large'),
-                    fontWeight: theme('fontWeight.semibold'),
-                    [`@media (max-width: ${theme('screens.sm')})`]: {
-                        fontSize: theme('fontSize.display-small'),
-                    },
-                },
-                h3: {
-                    color: theme('colors.primary.DEFAULT'),
-                    fontFamily: theme('fontFamily.noto-sans'),
-                    fontSize: theme('fontSize.headline-large'),
-                    fontWeight: theme('fontWeight.normal'),
-                    [`@media (max-width: ${theme('screens.sm')})`]: {
-                        fontSize: theme('fontSize.headline-small'),
-                    },
-                },
-                p: {
-                    color: theme('colors.primary.DEFAULT'),
-                    fontFamily: theme('fontFamily.noto-sans'),
-                    fontSize: theme('fontSize.body-large'),
-                    fontWeight: theme('fontWeight.normal'),
-                    [`@media (max-width: ${theme('screens.sm')})`]: {
-                        fontSize: theme('fontSize.body-small'),
-                    },
-                },
-            })
-        }),
-    ],
 }
