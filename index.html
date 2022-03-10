@@ -1,88 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="shortcut icon" href="./assets/img/three-points.svg" />
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-        <title>City</title>
-    </head>
-    <body>
-        <main>
-            <div class="home">
-                <img
-                    class="home-image"
-                    src="./assets/img/image.jpg"
-                    alt="image"
-                />
-                <div class="hero">
-                    <div class="Headline">
-                        <img
-                            class="icon"
-                            src="./assets/img/pin.svg"
-                            alt="pin"
-                            height="24"
-                        />
-                        <h1 class="title">Roy's Peak</h1>
-                        <h3 class="caption">Wanaka, New Zealand</h3>
-                        <p class="body-1">
-                            New Zealand is famous for its breathtaking hiking
-                            trails that wind and weave their way through its
-                            beautiful landscapes.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="card">
-                            <img
-                                class="card-avatar"
-                                src="./assets/img/photo.jpg"
-                                alt="avatar"
-                            />
-                            <div class="column">
-                                <p class="card-name">Emmanuel Rodríguez</p>
-                                <p class="card-label">
-                                    Published in <u>Adventure</u>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="upper-home">
-                <span class="shadow"></span>
-                <div class="chat show">
-                    <div class="chat-list">
-                        <div class="button-cross" onclick="openChat()">
-                            <img
-                                class="icon"
-                                src="./assets/img/cross.svg"
-                                alt="cross"
-                                height="18"
-                            />
-                        </div>
-                    </div>
-                    <div class="chat-input">
-                        <textarea
-                            class="input-message body-2"
-                            rows="4"
-                            maxlength="150"
-                        ></textarea>
-                        <button
-                            class="button button-action"
-                            onclick="addComment()"
-                        >
-                            Comment
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <script src="./assets/js/components/chat.js"></script>
-        <script src="./assets/js/animations/index.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>

@@ -1,9 +1,0 @@
-@import './theme/font.css';
-@import './theme/globals.css';
-@import './theme/layout.css';
-
-@import './components/button.css';
-@import './components/card.css';
-@import './components/chat.css';
-@import './components/image.css';
-@import './components/message.css';
