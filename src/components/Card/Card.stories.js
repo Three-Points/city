@@ -2,8 +2,12 @@ import Card from '.'
 
 export default {
     title: 'Components/Card',
+    args: {
+        name: 'John Doe',
+        label: 'Published in Adventure',
+    },
 }
 
-export const Default = ({ src }) => {
-    return Card({ src })
+export const Default = ({ ...args }) => {
+    return Card({ ...args })
 }
