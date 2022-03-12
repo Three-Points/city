@@ -1,6 +1,7 @@
 import Title from './Title'
 import Caption from './Caption'
 import Content from './Content'
+import Label from './Label'
 
 export default {
     title: 'Theme/Font',
@@ -59,4 +60,8 @@ export const Headline3 = ({ ...args }) => {
 
 export const Paragraph = ({ ...args }) => {
     return Content({ ...args })
+}
+
+export const Auxiliar = ({ ...args }) => {
+    return Label({ ...args })
 }
