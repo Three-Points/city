@@ -1,5 +1,5 @@
 import Card from '../Card'
-import Message from '../../theme/font/Content'
+import Message from '../Text/Content'
 
 const className = ['flex flex-col'].join(' ')
 
