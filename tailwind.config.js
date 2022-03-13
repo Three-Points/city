@@ -26,8 +26,10 @@ module.exports = {
             },
             white: '#FFFFFF',
         },
-    },
-    boxShadow: {
-        DEFAULT: '#3B4252 0px 2px 8px',
+        extend: {
+            boxShadow: {
+                DEFAULT: '0px 4px 4px #403B4252',
+            },
+        },
     },
 }
