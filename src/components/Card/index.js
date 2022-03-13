@@ -1,22 +1,23 @@
 import Avatar from '../avatar'
-import CardName from '../../theme/font/Content'
-import CardLabel from '../../theme/font/Label'
+import cardName from '../Text/Content'
+import cardLabel from '../Text/Label'
 
 const className = ['flex flex-row items-center'].join(' ')
-const classNameColumn = ['ml-3'].join(' ')
+
+const cardDescription = ({ name, label }) => {
+    const col = document.createElement('div')
+    col.className = ['ml-3'].join(' ')
+    col.appendChild(cardName({ text: name }))
+    col.appendChild(cardLabel({ text: label }))
+    return col
+}
 
 export default ({ name, label }) => {
-    const div = document.createElement('div')
-    div.appendChild(
+    const card = document.createElement('div')
+    card.className = className
+    card.appendChild(
         Avatar({ src: 'https://randomuser.me/api/portraits/men/32.jpg' })
     )
-
-    const col = document.createElement('div')
-    col.appendChild(CardName({ text: name }))
-    col.appendChild(CardLabel({ text: label }))
-    col.className = classNameColumn
-
-    div.appendChild(col)
-    div.className = className
-    return div
+    card.appendChild(cardDescription({ name, label }))
+    return card
 }
