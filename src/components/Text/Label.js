@@ -1,4 +1,4 @@
-let className = [
+const className = [
     'text-primary-soft',
     'font-noto-sans text-label-small font-semibold',
     'sm:text-label-large',
@@ -6,7 +6,8 @@ let className = [
 
 export default ({ text }) => {
     const span = document.createElement('span')
-    span.innerText = text ?? 'Label'
+    span.innerText = text || ''
+    span.className = 'label'
     span.className = className
     return span
 }

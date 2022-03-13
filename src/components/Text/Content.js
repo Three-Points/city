@@ -6,7 +6,7 @@ const className = [
 
 export default ({ text }) => {
     const p = document.createElement('p')
-    p.innerText = text ?? 'Content'
+    p.innerText = text || ''
     p.className = className
     return p
 }

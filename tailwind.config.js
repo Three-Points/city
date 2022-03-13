@@ -12,7 +12,7 @@ module.exports = {
             'body-large': '18px',
             'headline-small': '20px',
             'headline-large': '24px',
-            'display-small': '32px',
+            'display-small': '30px',
             'display-large': '48px',
         },
         colors: {
