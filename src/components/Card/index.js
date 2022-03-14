@@ -1,6 +1,6 @@
-import Avatar from '../avatar'
-import cardName from '../Text/Content'
-import cardLabel from '../Text/Label'
+import Avatar from '@components/Avatar'
+import cardName from '@components/Text/Content'
+import cardLabel from '@components/Text/Label'
 
 const className = ['flex flex-row items-center'].join(' ')
 
@@ -19,5 +19,5 @@ export default ({ name, label }) => {
         Avatar({ src: 'https://randomuser.me/api/portraits/men/32.jpg' })
     )
     card.appendChild(cardDescription({ name, label }))
-    return card
+    return card.outerHTML
 }

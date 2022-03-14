@@ -1,6 +1,9 @@
-import ButtonIcon from '../Button/ButtonIcon'
+import ButtonIcon from '@components/Button/ButtonIcon'
 
-const className = ['flex flex-row justify-around', 'sm:flex-col'].join(' ')
+const className = [
+    'flex flex-row justify-center items-center',
+    'md:flex-col',
+].join(' ')
 
 export default () => {
     const div = document.createElement('div')
@@ -8,5 +11,5 @@ export default () => {
     div.appendChild(ButtonIcon({ name: 'Chat' }))
     div.appendChild(ButtonIcon({ name: 'Heart' }))
     div.className = className
-    return div
+    return div.outerHTML
 }

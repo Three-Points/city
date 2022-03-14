@@ -5,8 +5,8 @@ const className = [
 ].join(' ')
 
 export default ({ text }) => {
-    const h1 = document.createElement('h1')
-    h1.innerText = text || ''
-    h1.className = className
-    return h1
+    const h2 = document.createElement('h2')
+    h2.innerText = text || ''
+    h2.className = className
+    return h2.outerHTML
 }

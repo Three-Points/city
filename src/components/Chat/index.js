@@ -1,5 +1,5 @@
-import Button from '../Button'
-import InputArea from '../Input/InputArea'
+import Button from '@components/Button'
+import InputArea from '@components/Input/InputArea'
 
 const className = ['flex flex-col items-end'].join(' ')
 

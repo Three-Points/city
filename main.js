@@ -1,6 +1,4 @@
-import "./style.css";
+import './styles.css'
+import Home from '@views/Home.js'
 
-document.querySelector("#app").innerHTML = `
-  <h1 class="text-yellow-700">Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+document.querySelector('#app').innerHTML = Home()
