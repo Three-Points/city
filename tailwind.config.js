@@ -3,7 +3,7 @@ module.exports = {
     theme: {
         fontFamily: {
             'noto-sans': ['Noto Sans Display'],
-            'noto-serif': ['Noto Serif Display'],
+            'pt-serif': ['PT Serif'],
         },
         fontSize: {
             'label-small': '12px',
@@ -25,6 +25,7 @@ module.exports = {
                 hover: '#DBE4F3',
             },
             white: '#FFFFFF',
+            shadow: '#3b425240',
         },
         extend: {
             boxShadow: {
@@ -32,5 +33,8 @@ module.exports = {
             },
         },
     },
-    plugins: [require('./src/theme/index.base')],
+    plugins: [
+        require('./src/theme/index.base'),
+        require('./src/theme/index.util'),
+    ],
 }

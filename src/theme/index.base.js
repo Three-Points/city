@@ -4,7 +4,7 @@ module.exports = plugin(function ({ addBase, theme }) {
     addBase({
         h2: {
             color: theme('colors.primary.DEFAULT'),
-            fontFamily: theme('fontFamily.noto-serif'),
+            fontFamily: theme('fontFamily.pt-serif'),
             fontSize: theme('fontSize.display-small'),
             fontWeight: theme('fontWeight.semibold'),
         },
