@@ -1,12 +1,15 @@
+import asside from '@layout/asside'
+
 import Card from '@components/Card'
 import Menu from '@components/Menu'
 
 import imagePlace from '@assets/img/photo.jpeg'
+import iconPin from '@assets/icons/Pin.svg'
 
 const classNameHome = [
-    'm-3',
+    'p-6',
     'grid grid-rows-[repeat(2,_min-content)_48px] gap-y-[36px]',
-    'md:h-screen md:m-0',
+    'md:h-screen md:p-0',
     'md:grid-cols-[repeat(2,_1fr)_84px] md:grid-rows-1',
 ].join(' ')
 const classNameImage = [
@@ -22,6 +25,16 @@ const classNameDescription = [
     'md:p-[216px_36px_72px_48px]',
 ].join(' ')
 
+const handleAsside = () => {
+    const shadow = document.querySelector('.shadow')
+    const asside = document.querySelector('.asside')
+
+    shadow.classList.toggle('shadow_show')
+    shadow.classList.toggle('shadow_hide')
+    asside.classList.toggle('asside_show')
+    asside.classList.toggle('asside_hide')
+}
+
 export default () => {
     const namePlace = "Roy's Peak"
     const locationPlace = 'Wanaka, New Zealand'
@@ -29,24 +42,26 @@ export default () => {
         'New Zealand is famous for its breathtaking hiking trails that wind and weave their way through its beautiful landscapes.'
 
     const home = `
-        <div class='${classNameHome}'>
-            <img class='${classNameImage}' src='${imagePlace}' alt='Hero' />
-            <div class='${classNameDescription}'>
-                <div class='grid gap-y-6'>
-                    <div>
-                        <img class='' src='./src/assets/icons/Pin.svg' alt='Pin' />
-                        <h2>${namePlace}</h2>
-                        <h2 class='text-primary-soft font-light'>${locationPlace}</h2>
-                    </div>
-                    <h3>${introductionPlace}</h3>
+    <div class='${classNameHome}'>
+        <img class='${classNameImage}' src='${imagePlace}' alt='Hero' />
+        <div class='${classNameDescription}'>
+            <div class='grid gap-y-6'>
+                <div>
+                    <img src='${iconPin}' alt='Pin' />
+                    <h2>${namePlace}</h2>
+                    <h2>${locationPlace}</h2>
                 </div>
-                ${Card({
-                    name: 'Emmanuel Rodríguez',
-                    label: 'Published in Adventure',
-                })}
+                <h3>${introductionPlace}</h3>
             </div>
-            ${Menu()}
+            ${Card({
+                avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+                name: 'Emmanuel Rodríguez',
+                label: 'Published in Adventure',
+            })}
         </div>
+        ${Menu({ onclick: handleAsside })}
+    </div>
+    ${asside({ onclick: handleAsside })}
     `
     return home
 }
