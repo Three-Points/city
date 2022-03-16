@@ -1,6 +1,6 @@
-import ButtonIcon from '@components/Button/ButtonIcon'
-import Comment from '@components/Comment'
-import Chat from '@components/Chat'
+import ButtonIcon from '@baseComponents/Button/ButtonIcon'
+import Comment from '@containerComponents/Comment'
+import Chat from '@containerComponents/Chat'
 
 const classNameShadow = [
     'shadow shadow_hide',
@@ -20,7 +20,7 @@ const classNameAsside = [
 ].join(' ')
 
 export default ({ onclick }) => {
-    const asside = `
+    return `
         <span class="${classNameShadow}"></span>
         <div class="${classNameAsside}">
             <div class="grid justify-end justify-items-end gap-x-[24px] w-full">
@@ -41,5 +41,4 @@ export default ({ onclick }) => {
             </div>
         </div>
         `
-    return asside
 }

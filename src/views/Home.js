@@ -1,7 +1,7 @@
 import asside from '@layout/asside'
 
-import Card from '@components/Card'
-import Menu from '@components/Menu'
+import Card from '@baseComponents/Card'
+import Menu from '@containerComponents/Menu'
 
 import imagePlace from '@assets/img/photo.jpeg'
 import iconPin from '@assets/icons/Pin.svg'
