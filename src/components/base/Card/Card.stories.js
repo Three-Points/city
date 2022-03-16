@@ -1,7 +1,7 @@
 import Card from '.'
 
 export default {
-    title: 'Components/Card',
+    title: 'Components/Base/Card',
     args: {
         avatar: '',
         name: 'John Doe',

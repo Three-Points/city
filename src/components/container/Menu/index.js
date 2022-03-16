@@ -1,4 +1,4 @@
-import ButtonIcon from '@components/Button/ButtonIcon'
+import ButtonIcon from '@baseComponents/Button/ButtonIcon'
 
 const className = [
     'flex flex-row justify-center items-center',

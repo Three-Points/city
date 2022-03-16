@@ -2,7 +2,7 @@ import InputText from '.'
 import InputArea from './InputArea'
 
 export default {
-    title: 'Components/Input',
+    title: 'Components/Base/Input',
     args: {
         placeholder: 'Type something...',
     },

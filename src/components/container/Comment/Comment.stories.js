@@ -1,7 +1,7 @@
 import Comment from '.'
 
 export default {
-    title: 'Components/Comment',
+    title: 'Components/Container/Comment',
     args: {
         name: 'John Doe',
         label: 'Published in Adventure',

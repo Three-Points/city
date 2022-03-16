@@ -2,7 +2,7 @@ import Btn from '.'
 import BtnIcon from './ButtonIcon'
 
 export default {
-    title: 'Components/Button',
+    title: 'Components/Base/Button',
     args: {
         text: 'Button',
         icon: 'Chat',

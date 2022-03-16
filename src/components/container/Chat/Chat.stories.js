@@ -1,7 +1,7 @@
 import Chat from '.'
 
 export default {
-    title: 'Components/Chat',
+    title: 'Components/Container/Chat',
     args: {
         name: 'John Doe',
         label: 'Published in Adventure',

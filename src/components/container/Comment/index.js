@@ -1,4 +1,4 @@
-import Card from '@components/Card'
+import Card from '@baseComponents/Card'
 
 const className = ['flex flex-col'].join(' ')
 
