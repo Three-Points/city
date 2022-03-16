@@ -4,9 +4,4 @@ const className = [
     'sm:text-headline-large',
 ].join(' ')
 
-export default ({ text }) => {
-    const h3 = document.createElement('h3')
-    h3.innerText = text || ''
-    h3.className = className
-    return h3
-}
+export default ({ text }) => `<h3 class="${className}">${text}</h3>`

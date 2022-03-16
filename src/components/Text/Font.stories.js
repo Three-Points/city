@@ -6,6 +6,7 @@ import Label from './Label'
 export default {
     title: 'Theme/Font',
     args: {
+        text: 'Almost before we knew it, we had left the ground.',
         weight: 'normal',
     },
     argTypes: {

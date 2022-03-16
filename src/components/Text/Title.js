@@ -4,9 +4,4 @@ const className = [
     'sm:text-display-large',
 ].join(' ')
 
-export default ({ text }) => {
-    const h2 = document.createElement('h2')
-    h2.innerText = text || ''
-    h2.className = className
-    return h2.outerHTML
-}
+export default ({ text }) => `<h2 class="${className}">${text}</h2>`

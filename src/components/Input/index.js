@@ -24,17 +24,8 @@ const classNameLine = [
     'ease-out transition-colors duration-300',
 ].join(' ')
 
-export default () => {
-    const div = document.createElement('div')
-
-    const input = document.createElement('input')
-    input.className = classNameInput
-
-    const line = document.createElement('div')
-    line.className = classNameLine
-
-    div.appendChild(input)
-    div.appendChild(line)
-    div.className = className
-    return div
-}
+export default () => `
+    <div class="${className}">
+        <input class="${classNameInput}" />
+        <div class="${classNameLine}" />
+    </div>`

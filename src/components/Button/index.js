@@ -9,9 +9,5 @@ const className = [
     'ease-out transition-shadow duration-300',
 ].join(' ')
 
-export default ({ text }) => {
-    const button = document.createElement('button')
-    button.innerHTML = text || 'Button'
-    button.className = className
-    return button
-}
+export default ({ text, style }) =>
+    `<button class="${className} ${style || ''}">${text}</button>`

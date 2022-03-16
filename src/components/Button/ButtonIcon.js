@@ -1,5 +1,3 @@
-import Icon from '@components/Icon'
-
 const className = [
     'h-12 w-12 m-3 p-1.5',
     'flex justify-center',
@@ -9,9 +7,15 @@ const className = [
     'ease-out transition-colors duration-300',
 ].join(' ')
 
-export default ({ name }) => {
-    const div = document.createElement('div')
-    div.appendChild(Icon({ name }))
-    div.className = className
-    return div
+window.handleClick = (fn) => fn()
+
+export default ({ style, icon, onclick }) => {
+    const src = `/src/assets/icons/${icon}.svg`
+    const buttonIcon = `
+        <div class="${className} ${
+        style || ''
+    }" onclick="handleClick(${onclick})">
+            <img src="${src}" alt="Icon" />
+        </div>`
+    return buttonIcon
 }

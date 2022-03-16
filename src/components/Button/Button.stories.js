@@ -3,11 +3,15 @@ import BtnIcon from './ButtonIcon'
 
 export default {
     title: 'Components/Button',
+    args: {
+        text: 'Button',
+        icon: 'Chat',
+    },
     argTypes: {
-        name: {
-            name: 'Name',
-            description: 'Icon name',
-            options: ['Chat', 'Cross', 'Heart', 'Heart-Selected','User'],
+        icon: {
+            name: 'Icon',
+            description: 'Icon to show in the button',
+            options: ['Chat', 'Cross', 'Heart', 'Heart-Selected', 'User'],
             control: {
                 type: 'select',
             },

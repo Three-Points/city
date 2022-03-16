@@ -4,10 +4,4 @@ const className = [
     'sm:text-label-large',
 ].join(' ')
 
-export default ({ text }) => {
-    const span = document.createElement('span')
-    span.innerText = text || ''
-    span.className = 'label'
-    span.className = className
-    return span
-}
+export default ({ text }) => `<span class="${className}">${text}</span>`

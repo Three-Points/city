@@ -5,11 +5,9 @@ const className = [
     'md:flex-col',
 ].join(' ')
 
-export default () => {
-    const div = document.createElement('div')
-    div.appendChild(ButtonIcon({ name: 'User' }))
-    div.appendChild(ButtonIcon({ name: 'Chat' }))
-    div.appendChild(ButtonIcon({ name: 'Heart' }))
-    div.className = className
-    return div.outerHTML
-}
+export default ({ onclick }) => `
+    <div class="${className}">
+        ${ButtonIcon({ icon: 'User', onclick })}
+        ${ButtonIcon({ icon: 'Chat', onclick })}
+        ${ButtonIcon({ icon: 'Heart', onclick })}
+    </div>`

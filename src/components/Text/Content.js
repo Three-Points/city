@@ -4,9 +4,4 @@ const className = [
     'sm:text-body-large',
 ].join(' ')
 
-export default ({ text }) => {
-    const p = document.createElement('p')
-    p.innerText = text || ''
-    p.className = className
-    return p
-}
+export default ({ text }) => `<p class="${className}">${text}</p>`
