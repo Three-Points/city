@@ -41,7 +41,7 @@ export default () => {
     const introductionPlace =
         'New Zealand is famous for its breathtaking hiking trails that wind and weave their way through its beautiful landscapes.'
 
-    const home = `
+    return `
     <div class='${classNameHome}'>
         <img class='${classNameImage}' src='${imagePlace}' alt='Hero' />
         <div class='${classNameDescription}'>
@@ -63,5 +63,4 @@ export default () => {
     </div>
     ${asside({ onclick: handleAsside })}
     `
-    return home
 }
