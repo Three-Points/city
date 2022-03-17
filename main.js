@@ -1,4 +1,7 @@
 import './styles.css'
-import Home from '@views/Home.js'
+import router from '@router/index'
 
-document.querySelector('#app').innerHTML = Home()
+window.router = () => router()
+
+window.addEventListener('load', window.router)
+window.addEventListener('popstate', window.router)
