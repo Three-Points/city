@@ -9,7 +9,7 @@ const className = [
     'text-center',
 ].join(' ')
 
-const handleLike = () => {
+const handleClose = () => {
     window.history.pushState({}, '', '/')
     window.router()
 }
@@ -20,7 +20,7 @@ export default () => `
         <div class='justify-self-end'>
             ${ButtonIcon({
                 icon: 'Cross',
-                onclick: handleLike,
+                onclick: handleClose,
             })}
         </div>
         <div class="justify-self-center">
