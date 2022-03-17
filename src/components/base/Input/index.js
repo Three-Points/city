@@ -1,4 +1,5 @@
 const className = [
+    'w-full',
     'rounded-lg',
     'resize-none',
     'text-primary',
@@ -26,6 +27,7 @@ const classNameLine = [
 
 export default () => `
     <div class="${className}">
-        <input class="${classNameInput}" />
-        <div class="${classNameLine}" />
-    </div>`
+        <input class="${classNameInput}" required/>
+        <div class="${classNameLine}"></div>
+    </div>
+`

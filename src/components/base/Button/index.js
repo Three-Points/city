@@ -1,5 +1,5 @@
 const className = [
-    'py-2.5 px-5',
+    'min-w-[108px] py-2.5 px-5',
     'text-white',
     'bg-primary',
     'flex flex-row justify-center items-center',
