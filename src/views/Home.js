@@ -13,7 +13,7 @@ const classNameHome = [
     'md:grid-cols-[repeat(2,_1fr)_84px] md:grid-rows-1',
 ].join(' ')
 const classNameImage = [
-    'h-full w-full',
+    'h-full',
     'object-cover',
     'rounded-lg',
     'md:rounded-none',

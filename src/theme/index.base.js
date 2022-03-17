@@ -14,7 +14,7 @@ module.exports = plugin(function ({ addBase, theme }) {
             fontSize: theme('fontSize.headline-small'),
             fontWeight: theme('fontWeight.normal'),
         },
-        p: {
+        'p, label': {
             color: theme('colors.primary.DEFAULT'),
             fontFamily: theme('fontFamily.noto-sans'),
             fontSize: theme('fontSize.body-small'),
