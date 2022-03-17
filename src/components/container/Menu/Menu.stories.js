@@ -1,9 +1,9 @@
-import Menu from '.'
+import Menu from "."
 
 export default {
-    title: 'Components/Container/Menu',
+    title: "Components/Container/Menu",
     args: {
-        onclick: () => console.log('onclick'),
+        onclick: () => console.log("onclick"),
     },
 }
 

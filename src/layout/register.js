@@ -1,16 +1,16 @@
-import ButtonIcon from '@baseComponents/Button/ButtonIcon'
-import Form from '@containerComponents/Form'
+import ButtonIcon from "@baseComponents/Button/ButtonIcon"
+import Form from "@containerComponents/Form"
 
 const className = [
-    'h-full max-w-[750px] w-full p-6',
-    'grid gap-y-[180px]',
-    'rounded',
-    'md:h-fit md:p-[36px_24px] md:shadow',
-    'text-center',
-].join(' ')
+    "h-full max-w-[750px] w-full p-6",
+    "grid gap-y-[180px]",
+    "rounded",
+    "md:h-fit md:p-[36px_24px] md:shadow",
+    "text-center",
+].join(" ")
 
 const handleClose = () => {
-    window.history.pushState({}, '', '/')
+    window.history.pushState({}, "", "/")
     window.router()
 }
 
@@ -19,7 +19,7 @@ export default () => `
     <div class="grid gap-y-[24px]">
         <div class='justify-self-end'>
             ${ButtonIcon({
-                icon: 'Cross',
+                icon: "Cross",
                 onclick: handleClose,
             })}
         </div>

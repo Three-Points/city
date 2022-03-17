@@ -1,10 +1,10 @@
-import Chat from '.'
+import Chat from "."
 
 export default {
-    title: 'Components/Container/Chat',
+    title: "Components/Container/Chat",
     args: {
-        name: 'John Doe',
-        label: 'Published in Adventure',
+        name: "John Doe",
+        label: "Published in Adventure",
     },
 }
 

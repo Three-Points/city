@@ -1,11 +1,11 @@
-import Card from '.'
+import Card from "."
 
 export default {
-    title: 'Components/Base/Card',
+    title: "Components/Base/Card",
     args: {
-        avatar: '',
-        name: 'John Doe',
-        label: 'Published in Adventure',
+        avatar: "",
+        name: "John Doe",
+        label: "Published in Adventure",
     },
 }
 

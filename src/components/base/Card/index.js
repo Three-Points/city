@@ -1,7 +1,7 @@
-import iconUser from '@assets/icons/User.svg'
+import iconUser from "@assets/icons/User.svg"
 
-const className = ['flex flex-row items-center'].join(' ')
-const classNameAvatar = ['w-12 h-12', 'rounded-full'].join(' ')
+const className = ["flex flex-row items-center"].join(" ")
+const classNameAvatar = ["w-12 h-12", "rounded-full"].join(" ")
 
 export default ({ avatar, name, label }) => {
     const src = avatar || iconUser

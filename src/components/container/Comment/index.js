@@ -1,6 +1,6 @@
-import Card from '@baseComponents/Card'
+import Card from "@baseComponents/Card"
 
-const className = ['flex flex-col'].join(' ')
+const className = ["flex flex-col"].join(" ")
 
 export default ({ text, ...card }) => {
     const comment = `

@@ -1,7 +1,7 @@
-import Form from '.'
+import Form from "."
 
 export default {
-    title: 'Components/Container/Form',
+    title: "Components/Container/Form",
 }
 
 export const Default = ({ ...args }) => {

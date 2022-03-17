@@ -48,7 +48,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.12.10", "@babel/core@^7.12.3", "@babel/core@^7.16.12", "@babel/core@^7.17.5":
+"@babel/core@7.17.5", "@babel/core@^7.1.0", "@babel/core@^7.12.10", "@babel/core@^7.12.3", "@babel/core@^7.16.12":
   version "7.17.5"
   resolved "https://repo.huaweicloud.com/repository/npm/@babel/core/-/core-7.17.5.tgz#6cd2e836058c28f06a4ca8ee7ed955bbf37c8225"
   integrity sha512-/BBMw4EvjmyquN5O+t5eh0+YqB3XXJkYD2cjKpYtWOfFy4lQ4UozNSmxAcWT8r2XtZs0ewG+zrfsqeR15i1ajA==
@@ -1385,7 +1385,7 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@storybook/addon-actions@6.5.0-alpha.45", "@storybook/addon-actions@^6.5.0-alpha.45":
+"@storybook/addon-actions@6.5.0-alpha.45":
   version "6.5.0-alpha.45"
   resolved "https://repo.huaweicloud.com/repository/npm/@storybook/addon-actions/-/addon-actions-6.5.0-alpha.45.tgz#3cf39a2ee5627022be2059d3bd46f2667593a149"
   integrity sha512-RwyPkVfjZ4Zq2OY0V+V/4ycvVsRi5EOueEOjUQZkVaggVEv6tKaXsGdfmTV7DZXu7ECFreqL3fY0eibUGWIJJw==
@@ -1496,7 +1496,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-essentials@^6.5.0-alpha.45":
+"@storybook/addon-essentials@6.5.0-alpha.45":
   version "6.5.0-alpha.45"
   resolved "https://repo.huaweicloud.com/repository/npm/@storybook/addon-essentials/-/addon-essentials-6.5.0-alpha.45.tgz#c788b1937d2b14c4144946785349b9db39c03a4f"
   integrity sha512-TKhKIsRf02XaFVbRPG0qZCBGIzCimAru/P3uzgVMZsG7XYL1q8r6SxOuYRLJ3nVZ5HcWEaKtJDtkzX6l584iFg==
@@ -1517,7 +1517,7 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-links@^6.5.0-alpha.45":
+"@storybook/addon-links@6.5.0-alpha.45":
   version "6.5.0-alpha.45"
   resolved "https://repo.huaweicloud.com/repository/npm/@storybook/addon-links/-/addon-links-6.5.0-alpha.45.tgz#9ca376fe2a7645a86c616ae1028603e32a4cf44a"
   integrity sha512-6y9g3Flaa4VQxCPpTI7zVHVbxDvRkSyyx6GspW33Rz5fBV+99wR+lidZBCkuzpbfxU6sRBZZOPSHuVGr+KsMiw==
@@ -1565,7 +1565,7 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-postcss@^2.0.0":
+"@storybook/addon-postcss@2.0.0":
   version "2.0.0"
   resolved "https://repo.huaweicloud.com/repository/npm/@storybook/addon-postcss/-/addon-postcss-2.0.0.tgz#ec61cb9bb2662f408072b35c466c7df801c28498"
   integrity sha512-Nt82A7e9zJH4+A+VzLKKswUfru+T6FJTakj4dccP0i8DSn7a0CkzRPrLuZBq8tg4voV6gD74bcDf3gViCVBGtA==
@@ -2037,7 +2037,7 @@
   dependencies:
     lodash "^4.17.15"
 
-"@storybook/html@^6.5.0-alpha.45":
+"@storybook/html@6.5.0-alpha.45":
   version "6.5.0-alpha.45"
   resolved "https://repo.huaweicloud.com/repository/npm/@storybook/html/-/html-6.5.0-alpha.45.tgz#d5c57287d3ec06723c57fb6ecb837b5c680e2667"
   integrity sha512-c7mksgMgKtKxGTv1WWx8TFxCEn/LPKFVIkFHzH6mEVUE+8QrC3tFogoJ1h6fdZhnkBAZrRaINSPw9rA/Jh7NMw==
@@ -2978,7 +2978,7 @@ atob@^2.1.2:
   resolved "https://repo.huaweicloud.com/repository/npm/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^10.4.2:
+autoprefixer@10.4.2:
   version "10.4.2"
   resolved "https://repo.huaweicloud.com/repository/npm/autoprefixer/-/autoprefixer-10.4.2.tgz#25e1df09a31a9fba5c40b578936b90d35c9d4d3b"
   integrity sha512-9fOPpHKuDW1w/0EKfRmVnxTDt8166MAnLI3mgZ1JCnhNtYWxcJ6Ud5CO/AVOZi/AvFa8DY9RTy3h3+tFBlrrdQ==
@@ -3003,7 +3003,7 @@ autoprefixer@^9.8.6:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-babel-loader@^8.0.0, babel-loader@^8.2.3:
+babel-loader@8.2.3, babel-loader@^8.0.0:
   version "8.2.3"
   resolved "https://repo.huaweicloud.com/repository/npm/babel-loader/-/babel-loader-8.2.3.tgz#8986b40f1a64cacfcb4b8429320085ef68b1342d"
   integrity sha512-n4Zeta8NC3QAsuyiizu0GkmRcQ6clkV9WFUnUf1iXP//IeSKbWjofW3UHyZVwlOB4y039YQKefawyTn64Zwbuw==
@@ -7605,6 +7605,15 @@ postcss-value-parser@^4.1.0, postcss-value-parser@^4.2.0:
   resolved "https://repo.huaweicloud.com/repository/npm/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
+postcss@8.4.7, postcss@^8.4.6:
+  version "8.4.7"
+  resolved "https://repo.huaweicloud.com/repository/npm/postcss/-/postcss-8.4.7.tgz#f99862069ec4541de386bf57f5660a6c7a0875a8"
+  integrity sha512-L9Ye3r6hkkCeOETQX6iOaWZgjp3LL6Lpqm6EtgbKrgqGGteRMNb9vzBfRL96YOSu8o7x3MfIH9Mo5cPJFGrW6A==
+  dependencies:
+    nanoid "^3.3.1"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
+
 postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0.36, postcss@^7.0.5, postcss@^7.0.6:
   version "7.0.39"
   resolved "https://repo.huaweicloud.com/repository/npm/postcss/-/postcss-7.0.39.tgz#9624375d965630e2e1f2c02a935c82a59cb48309"
@@ -7613,10 +7622,10 @@ postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.4.6, postcss@^8.4.7:
-  version "8.4.7"
-  resolved "https://repo.huaweicloud.com/repository/npm/postcss/-/postcss-8.4.7.tgz#f99862069ec4541de386bf57f5660a6c7a0875a8"
-  integrity sha512-L9Ye3r6hkkCeOETQX6iOaWZgjp3LL6Lpqm6EtgbKrgqGGteRMNb9vzBfRL96YOSu8o7x3MfIH9Mo5cPJFGrW6A==
+postcss@^8.4.5:
+  version "8.4.12"
+  resolved "https://repo.huaweicloud.com/repository/npm/postcss/-/postcss-8.4.12.tgz#1e7de78733b28970fa4743f7da6f3763648b1905"
+  integrity sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==
   dependencies:
     nanoid "^3.3.1"
     picocolors "^1.0.0"
@@ -7626,6 +7635,11 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://repo.huaweicloud.com/repository/npm/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+
+prettier@2.6.0:
+  version "2.6.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/prettier/-/prettier-2.6.0.tgz#12f8f504c4d8ddb76475f441337542fa799207d4"
+  integrity sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==
 
 "prettier@>=2.2.1 <=2.3.0":
   version "2.3.0"
@@ -8663,7 +8677,7 @@ store2@^2.12.0:
   resolved "https://repo.huaweicloud.com/repository/npm/store2/-/store2-2.13.1.tgz#fae7b5bb9d35fc53dc61cd262df3abb2f6e59022"
   integrity sha512-iJtHSGmNgAUx0b/MCS6ASGxb//hGrHHRgzvN+K5bvkBTN7A9RTpPSf1WSp+nPGvWCJ1jRnvY7MKnuqfoi3OEqg==
 
-storybook-builder-vite@^0.1.17:
+storybook-builder-vite@0.1.17:
   version "0.1.17"
   resolved "https://repo.huaweicloud.com/repository/npm/storybook-builder-vite/-/storybook-builder-vite-0.1.17.tgz#d9b0da0ef1799705e27c209305fc22a1552bb5fe"
   integrity sha512-VnZYEEJ/PHF8Q4T0F3TIMlE/KZ3ZBYfv7UrVg2NxIjoYUPz0IP/KwoNMFV+meLAcl6ih7fyb+M+ADJCW7WI6gg==
@@ -8864,7 +8878,7 @@ synchronous-promise@^2.0.15:
   resolved "https://repo.huaweicloud.com/repository/npm/synchronous-promise/-/synchronous-promise-2.0.15.tgz#07ca1822b9de0001f5ff73595f3d08c4f720eb8e"
   integrity sha512-k8uzYIkIVwmT+TcglpdN50pS2y1BDcUnBPK9iJeGu0Pl1lOI8pD6wtzgw91Pjpe+RxtTncw32tLxs/R0yNL2Mg==
 
-tailwindcss@^3.0.23:
+tailwindcss@3.0.23:
   version "3.0.23"
   resolved "https://repo.huaweicloud.com/repository/npm/tailwindcss/-/tailwindcss-3.0.23.tgz#c620521d53a289650872a66adfcb4129d2200d10"
   integrity sha512-+OZOV9ubyQ6oI2BXEhzw4HrqvgcARY38xv3zKcjnWtMIZstEsXdI9xftd1iB7+RbOnj2HOEzkA0OyB5BaSxPQA==
@@ -9448,13 +9462,13 @@ vite-plugin-mdx@^3.5.6:
     resolve "^1.20.0"
     unified "^9.2.1"
 
-vite@^2.8.0:
-  version "2.8.6"
-  resolved "https://repo.huaweicloud.com/repository/npm/vite/-/vite-2.8.6.tgz#32d50e23c99ca31b26b8ccdc78b1d72d4d7323d3"
-  integrity sha512-e4H0QpludOVKkmOsRyqQ7LTcMUDF3mcgyNU4lmi0B5JUbe0ZxeBBl8VoZ8Y6Rfn9eFKYtdXNPcYK97ZwH+K2ug==
+vite@2.8.0:
+  version "2.8.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/vite/-/vite-2.8.0.tgz#0646ab9eee805fb24b667889644ac04bc516d0d3"
+  integrity sha512-ed5rjyeysttuPJX/aKSA0gTB/8ZKLM5xF6FtEuKy1B9DiQbDNFMVMQxnb9JesgBPUMMIJxC8w5KZ/KNWLKFXoA==
   dependencies:
     esbuild "^0.14.14"
-    postcss "^8.4.6"
+    postcss "^8.4.5"
     resolve "^1.22.0"
     rollup "^2.59.0"
   optionalDependencies:
