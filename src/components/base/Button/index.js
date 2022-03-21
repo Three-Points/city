@@ -9,5 +9,9 @@ const className = [
     "ease-out transition-shadow duration-300",
 ].join(" ")
 
-export default ({ text, style }) =>
-    `<button class="${className} ${style || ""}">${text}</button>`
+window.handleClick = (fn) => fn()
+
+export default ({ text, style, onclick }) =>
+    `<button class="${className} ${
+        style || ""
+    }" onclick='handleClick(${onclick})'>${text}</button>`

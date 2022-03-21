@@ -11,15 +11,26 @@ const handleNavigator = () => {
 }
 
 const handleLike = () => {
-    console.log("handleLike")
+    const iconHeart = document.getElementById("button-icon")
+    window.isLike = !window.isLike
+    iconHeart.src = window.isLike
+        ? "/src/assets/icons/Heart-Selected.svg"
+        : "/src/assets/icons/Heart.svg"
 }
 
 export default ({ onclick }) => {
+    window.isLike = false
+    const isLike = localStorage.getItem("isLike")
     const style = "m-3 sm:mx-3"
     return `
     <div class="${className}">
         ${ButtonIcon({ icon: "User", style, onclick: handleNavigator })}
         ${ButtonIcon({ icon: "Chat", style, onclick })}
-        ${ButtonIcon({ icon: "Heart", style, onclick: handleLike })}
+        ${ButtonIcon({
+            id: "button-icon",
+            icon: window.isLike ? "HeartLike" : "Heart",
+            style,
+            onclick: handleLike,
+        })}
     </div>`
 }

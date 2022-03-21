@@ -1,6 +1,7 @@
 import iconUser from "@assets/icons/User.svg"
 import iconChat from "@assets/icons/Chat.svg"
 import iconHeart from "@assets/icons/Heart.svg"
+import iconHeartLike from "@assets/icons/Heart-Selected.svg"
 import iconCross from "@assets/icons/Cross.svg"
 
 const className = [
@@ -15,16 +16,17 @@ const src = {
     User: iconUser,
     Chat: iconChat,
     Heart: iconHeart,
+    HeartLike: iconHeartLike,
     Cross: iconCross,
 }
 
 window.handleClick = (fn) => fn()
 
-export default ({ style, icon, onclick }) => {
+export default ({ id, style, icon, onclick }) => {
     const additionalStyles = style || ""
     const buttonIcon = `
         <div class="${additionalStyles} ${className}" onclick='handleClick(${onclick})'>
-            <img src="${src[icon]}" alt="Icon" />
+            <img id="${id}" src="${src[icon]}" alt="Icon" />
         </div>`
     return buttonIcon
 }

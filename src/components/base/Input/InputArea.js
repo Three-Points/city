@@ -1,4 +1,5 @@
 const className = [
+    "textarea",
     "w-full h-40 p-4",
     "bg-gray",
     "rounded-lg",

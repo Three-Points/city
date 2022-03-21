@@ -1,5 +1,4 @@
 import ButtonIcon from "@baseComponents/Button/ButtonIcon"
-import Comment from "@containerComponents/Comment"
 import Chat from "@containerComponents/Chat"
 
 const classNameShadow = [
@@ -23,17 +22,11 @@ export default ({ onclick }) => {
     return `
         <span class="${classNameShadow}"></span>
         <div class="${classNameAsside}">
-            <div class="grid justify-end justify-items-end gap-x-[24px] w-full">
+            <div class="chat grid gap-y-[24px] w-full">
                 ${ButtonIcon({
-                    style: "m-0 sm:mx-0",
+                    style: "m-0 sm:mx-0 justify-self-end",
                     icon: "Cross",
                     onclick,
-                })}
-                ${Comment({
-                    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-                    name: "John Doe",
-                    label: "Published in Adventure",
-                    text: "Simplefly awaseome photo of natural environment. World is beautiful!!",
                 })}
             </div>
             <div class="grid items-end gap-x-[24px] w-full">
